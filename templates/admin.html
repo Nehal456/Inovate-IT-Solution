@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        body{
+            background:#0f172a;
+            color:white;
+            font-family:Arial;
+            padding:40px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:30px;
+        }
+
+        th,td{
+            border:1px solid #334155;
+            padding:15px;
+        }
+
+        th{
+            background:#1e293b;
+        }
+
+        tr:nth-child(even){
+            background:#111827;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Innovate IT Solution - Admin Dashboard</h1>
+
+    <table>
+
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Date</th>
+        </tr>
+
+        {% for contact in contacts %}
+
+        <tr>
+            <td>{{ contact.name }}</td>
+            <td>{{ contact.email }}</td>
+            <td>{{ contact.message }}</td>
+            <td>{{ contact.created_at }}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>
