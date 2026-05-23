@@ -13,6 +13,7 @@ Innovate IT Solution is a dynamic IT service platform built using Flask and depl
 - AWS cloud deployment
 - Gunicorn + NGINX configuration
 - Git/GitHub workflow integration
+- - PostgreSQL database integration
 
 ---
 
@@ -27,6 +28,7 @@ Innovate IT Solution is a dynamic IT service platform built using Flask and depl
 - Gunicorn
 - NGINX
 - GitHub
+- PostgreSQL
 
 ---
 
